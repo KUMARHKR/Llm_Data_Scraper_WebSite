@@ -1,0 +1,18 @@
+{% load bootstrap4 %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Web Scraper</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+    <h2>Web Scraper</h2>
+    <form method="post">
+        {% csrf_token %}
+        {% bootstrap_form form %}
+        <button type="submit" class="btn btn-primary">Scrape</button>
+    </form>
+</div>
+</body>
+</html>

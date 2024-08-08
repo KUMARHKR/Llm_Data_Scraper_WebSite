@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Results</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+    <h2>Results</h2>
+    <div>{{ data|safe }}</div>
+    <a href="{% url 'download' %}" class="btn btn-success">Download Data</a>
+</div>
+</body>
+</html>
